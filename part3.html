@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgb(142, 174, 187);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 530px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h2>Novel</h2>
+    </header>
+
+    <section>
+        <nav>
+
+
+            <div class="row">
+                <div class="column">
+                    <img src="https://i.pinimg.com/originals/30/c9/7f/30c97f03ea2ffd7bccd58114715ed528.jpg" alt="Snow"
+                        style="width:100%">
+
+        </nav>
+
+        <article>
+            <h1>The righn of queen victoria</h1>
+            <p> From the day when as a young girl of eighteen she succeeded to the throne she showed that a
+                constitutional monarch could still have a will of her own and that her words could make statesmen
+                tremble.</p>
+            <p>Queen Victoria remains one of the greatest figures in British history, not simply because of the
+                tremendous position which she occupied for so long, but because she was in so many ways herself an
+                extraordinary character.
+
+                From the day when as a young girl of eighteen she succeeded to the throne she showed that a
+                constitutional monarch could still have a will of her own and that her words could make statesmen
+                tremble.
+
+                In this classic biography Hector Bolitho analyses the phases of the Queen's life; her childhood and
+                upbringing, her all too brief married life with Albert, the years of' retirement behind the great walls
+                of Windsor and the more remote fastnesses of Deeside.
+
+                Although Bolitho calls his book ‘The Reign of Queen Victoria’, his work is essentially a record of a
+                remarkable woman and her husband, their personal lives and characters, rather than a political history
+                of her reign.
+
+                It describes the childhood and youth of Victoria and Albert in alternate chapters so that the reader can
+                see the two growing up side by side yet independently, and can trace the gradual evolution of their
+                characters in isolation until they come together.
+
+                The expansion of the Prince's influence, first over the Queen, then on successive Cabinets and Prime
+                Ministers, and finally on every aspect of the national life, is traced, and the importance of his
+                reforming zeal is clearly brought out, particularly in its lasting influence on Victoria herself, which
+                controlled to the end the more irrational elements of her character.
+
+                Praise for Hector Bolitho:
+
+                ‘Flowing and lively’ – Cobden Sanderson on ‘Albert, Prince Consort’
+
+                Hector Bolitho (1897-1974) was born in New Zealand but settled in Britain, where he wrote over fifty
+                books and worked as a freelance journalist. His other books include ‘Albert: Prince Consort’ and ‘A
+                Penguin in the Eyrie’.
+
+                Endeavour Press is the UK’s leading independent publisher of digital books</p>
+        </article>
+    </section>
+
+
+</body>
+
+</html>
